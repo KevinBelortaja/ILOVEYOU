@@ -284,14 +284,12 @@ td {
 }
 
 /* Iphone 6 */
-@media only screen 
-  and (min-device-width: 540px) 
-  and (max-device-width: 1156px) {
-    /*
+@media only screen and (max-device-width: 1156px) {
+    
     body {
-        background-color: red;
+        background-color: pink;
     }
-    */
+    
     .gallery {
         display: flex;
         justify-content: center;
