@@ -286,8 +286,7 @@ td {
 /* Iphone 6 */
 @media only screen 
   and (min-device-width: 540px) 
-  and (max-device-width: 1156px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (max-device-width: 1156px) {
     /*
     body {
         background-color: red;
