@@ -11,7 +11,6 @@
             <figure class="gallery__item gallery__item--00">
                 <p> 
                     <p id="countdown"></p>
-                    <!--<a href="game/html/page1.html">Klicke hier um das Spiel zu starten</a>-->
                 </p>
         </div>
     </main>
@@ -39,9 +38,9 @@
             
         // Output the result in an element with id="countdown"
         document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s ";
+        + minutes + "m " + seconds + "s<br>" + "<div class='lds-roller'><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>";
 
-        // If the count down is over, write some text
+        // If the count down is over, write some text 
         if (distance < 0) {
             clearInterval(x);
             document.getElementById("countdown").innerHTML = "Happy Birthday<br><br>" + '<a id="starttext" href="game/html/page1.html">Klicke hier um das Spiel zu starten</a>';
