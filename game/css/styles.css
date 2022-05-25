@@ -41,10 +41,8 @@ a {
 }
 
 #statistics {
-    padding-top: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: white;
+    padding-top: 100px;
     text-align: center;
     font-size: 25px;
 }
@@ -233,6 +231,19 @@ td {
     grid-row-end: 6; 
 }
 
+.gallery__item--00 {
+    color: white;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 6; 
+}
+
 /* heart logo */
 .heart {
     background-color: red;
@@ -272,27 +283,27 @@ td {
     text-transform: uppercase;
 }
 
+/* Iphone 6 */
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) {
-
+    /*
     body {
         background-color: red;
     }
-    /*
+    */
     .gallery {
         display: flex;
         justify-content: center;
         text-align: center;
-        align-items: center;
         height: 70vh;
     }
-    */
+    
     .gallery {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(25, 5vw);
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(30, 5vw);
         grid-gap: 15px;
     }
     
@@ -304,9 +315,9 @@ td {
     
     .gallery__item--1 {
         grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 4;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 9;
     }
     
     .gallery__item--2 {
@@ -409,18 +420,34 @@ td {
     
     .gallery__item--0 {
         color: white;
-        font-size: 17px;
+        font-size: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
-        grid-column-start: 4;
-        grid-column-end: 6;
-        grid-row-start: 4;
-        grid-row-end: 6; 
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 2;
+        grid-row-end: 4; 
+    }
+
+    .gallery__item--00 {
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 10;
+        grid-row-end: 20;
     }
 
     #countdown {
-        font-size: 20px;
+        font-size: 100px;
+    }
+
+    #starttext {
+        font-size: 40px;
     }
 }
