@@ -41,7 +41,7 @@
         document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
         + minutes + "m " + seconds + "s ";
 
-        // If the count down is over, write some text 
+        // If the count down is over, write some text
         if (distance < 0) {
             clearInterval(x);
             document.getElementById("countdown").innerHTML = "Happy Birthday<br><br>" + '<a id="starttext" href="game/html/page1.html">Klicke hier um das Spiel zu starten</a>';
