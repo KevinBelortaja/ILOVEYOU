@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://kit.fontawesome.com/757b06fb32.js" crossorigin="anonymous"></script>
+    <title>I LOVE YOU</title>
+</head>
+<body>
+    <header>
+        <nav class="dropdown">
+            <button  onclick="myFunction()" class="dropbtn">Menü</button>
+            <ul id="myDropdown" class="dropdown-content">
+                <li><a class="dropdowna" href="home.html">Home</a></li>
+                <li><a class="dropdowna" href="favWords.html">Lieblingswörter</a></li>
+                <li><a class="dropdowna" href="funFacts.html">Fun Facts</a></li>
+                <li><a class="dropdowna" href="bitcoin.html">Bitcoins Geschichte</a></li>
+                <li><a class="dropdowna" href="surprise.html">Surprise</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <main class="middletext">
+        <section class="hometext">
+            <p>Spaß, ich werd dich auf der Seite nicht über Bitcoins belästigen <br>Aber irgendwann mal....<i style="color: #ebebeb;" class="fa-solid fa-face-smile-wink"></i></p><br>
+            <img width="65" src="../img/bitcoin.png" alt="">
+        </section>
+    </main>
+
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+    </script>
+
+</body>
+</html>
